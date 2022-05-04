@@ -1,0 +1,33 @@
+  body{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(133, 152, 255, 0.65);
+  }
+  
+  /* DIV DESING */
+  .load{
+    margin-top: 50%;
+    
+    width: 20vh;
+    height: 20vh;
+    
+    border-radius: 50%;
+    border: 25px solid rgb(6, 6, 6, 0.5);
+    border-left-color: #003FFF;
+    animation: load 0.7s infinite;
+  }
+  
+  /* PARA MOBILES */
+  @media(max-width: 412px){
+    .load{
+      border: 10px solid rgb(6, 6, 6, 0.5);
+      border-left-color: #003FFF;
+    }
+  }
+  
+  /* FAZER A DIV FICAR GIRANDO... */
+  @keyframes load{
+    to{
+      transform: rotate(360deg);
+    }
+  }
